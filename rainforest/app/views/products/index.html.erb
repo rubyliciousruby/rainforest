@@ -3,5 +3,9 @@
 
 <% @products.each do |product| %>
   <p><%= product.title %>, <%= product.brand %></p>
+   <p><%= product.formatted_price %></p>
   <%= link_to image_tag(product.url), "/products/#{product.id}" %>
+
+
+
 <% end %>
